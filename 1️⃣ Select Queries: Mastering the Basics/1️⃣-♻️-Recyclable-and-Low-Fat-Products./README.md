@@ -75,4 +75,4 @@ WHERE low_fats = 'Y'
 
 ---
 
-Explore the solution, test it yourself, and see how it solves the problem effectively! 🌟
+Happy querying, and enjoy mastering SQL! 🚀
