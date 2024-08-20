@@ -1,13 +1,13 @@
-## 5️⃣-🚫-[Invalid-Tweets](https://leetcode.com/problems/invalid-tweets/?envType=study-plan-v2&envId=top-sql-50).
+# 5️⃣-🚫-[Invalid-Tweets](https://leetcode.com/problems/invalid-tweets/?envType=study-plan-v2&envId=top-sql-50).
 
 Welcome to the solution guide for the Invalid Tweets problem! 🚨 This exercise helps you practice filtering data based on character length within a string. Let’s dive into the problem!
 
-### 📜 Problem Statement
+## 📜 Problem Statement
 
-**Task:**  
+### **Task:**  
 You need to find the `tweet_id`s of invalid tweets in the `Tweets` table. A tweet is considered invalid if the number of characters in the `content` column is strictly greater than 15.
 
-**SQL Schema:**
+### **SQL Schema:**
 
 - Table: `Tweets`
 
@@ -19,16 +19,16 @@ You need to find the `tweet_id`s of invalid tweets in the `Tweets` table. A twee
 - `tweet_id`: This is a unique identifier for each tweet.
 - `content`: This column contains the text of the tweet.
 
-**Example:**
+### **Example:**
 
-**Input:** 
+#### **Input:** 
 
 | tweet_id | content                          |
 |----------|----------------------------------|
 | 1        | Vote for Biden                   |
 | 2        | Let us make America great again! |
 
-**Output:** 
+#### **Output:** 
 
 | tweet_id |
 |----------|
@@ -78,11 +78,11 @@ WHERE LENGTH(content) > 15;
 **Why This is Incorrect:**  
 - `LENGTH()` returns the number of bytes, not characters, which may differ, especially when dealing with non-ASCII characters or multi-byte encodings like UTF-8. Therefore, `CHAR_LENGTH()` is a more reliable choice.
 
-**Reference:**  
+## **Reference:**  
 For more details on the difference between `LENGTH()` and `CHAR_LENGTH()` and why it matters, refer to this [Stack Overflow discussion](https://stackoverflow.com/questions/1734334/mysql-length-vs-char-length?rq=1).
 
 
-### 🎯 Solution Validation
+## 🎯 Solution Validation
 
 - **Run the Query:** Copy and paste the `CHAR_LENGTH()` solution into your SQL environment to test its accuracy.
 - **Verify Results:** Ensure that the output matches the example provided above.
