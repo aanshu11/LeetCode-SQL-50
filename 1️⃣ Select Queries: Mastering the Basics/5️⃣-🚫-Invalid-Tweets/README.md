@@ -40,7 +40,9 @@ You need to find the `tweet_id`s of invalid tweets in the `Tweets` table. A twee
 
 ---
 
-### 💡 Solution 1: Using `CHAR_LENGTH()` Function
+## 💡 Solutions
+
+### Solution 1: Using `CHAR_LENGTH()` Function
 
 The first solution utilizes the `CHAR_LENGTH()` function to accurately measure the number of characters in the tweet's content.
 
@@ -60,7 +62,7 @@ WHERE CHAR_LENGTH(content) > 15;
 
 ---
 
-### 💡 Solution 2: Using `LENGTH()` Function (Not Recommended)
+###  Solution 2: Using `LENGTH()` Function (Not Recommended)
 
 The `LENGTH()` function can also be used to find the length of the tweet, but it measures the length in bytes, not characters, which could be problematic for certain encodings.
 
