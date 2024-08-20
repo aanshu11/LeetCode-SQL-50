@@ -84,7 +84,7 @@ WHERE LENGTH(content) > 15;
 For more details on the difference between `LENGTH()` and `CHAR_LENGTH()` and why it matters, refer to this [Stack Overflow discussion](https://stackoverflow.com/questions/1734334/mysql-length-vs-char-length?rq=1).
 
 
-## 🎯 Solution Validation
+## 🛠️ **Validation**
 
 - **Run the Query:** Copy and paste the `CHAR_LENGTH()` solution into your SQL environment to test its accuracy.
 - **Verify Results:** Ensure that the output matches the example provided above.
